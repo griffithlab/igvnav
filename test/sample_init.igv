@@ -1,0 +1,6 @@
+new
+genome b37
+load https://gscweb.gsc.wustl.edu//gscmnt/gc13031/info/build_merged_alignments/merged-alignment-blade12-3-5.gsc.wustl.edu-kkrysiak-20208-88ba806c65444fc8a1a1435bb321bc55/88ba806c65444fc8a1a1435bb321bc55.bam
+load https://gscweb.gsc.wustl.edu//gscmnt/gc13033/info/build_merged_alignments/merged-alignment-blade15-1-16.gsc.wustl.edu-kkrysiak-23618-bef47f8435ee4f46bbb6f6ebe100acc3/bef47f8435ee4f46bbb6f6ebe100acc3.bam
+maxPanelHeight 1500
+snapshotDirectory lymphoma/review/H_ML-08-0075-005-1127151
