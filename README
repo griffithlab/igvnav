@@ -19,8 +19,8 @@ be replaced when you save the file.
 
 
 For developers:
-$ hg clone
-the repo/ sub-folder
+
+clone the repo/ sub-folder
 
 The code is mostly in IGVNav.py
 
