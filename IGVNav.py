@@ -426,7 +426,7 @@ class ReviewWidget(wx.Frame):
 
 class BedFile(object):
 
-    def __init__(self, fpath, has_header=True):
+    def __init__(self, fpath, has_header=None):
         self.filepath = fpath
         self.filename = fpath.split(os.sep)[-1]
         self.has_header = has_header
@@ -457,6 +457,13 @@ class BedFile(object):
                 chromosome = row[0]
                 start, stop = int(row[1]), int(row[2])
                 ref, var = row[3], row[4]
+                if i == 0 and self.has_header is None:
+                    try:
+                        int(start)
+                        int(stop)
+                    except ValueError:
+                        i += 1
+                        continue
 
                 call, tags, notes = "", [], ""
                 if len(row) > 5:
