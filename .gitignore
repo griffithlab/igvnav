@@ -1,2 +1,5 @@
 .hg
 .hgignore
+
+build
+dist
