@@ -459,8 +459,11 @@ class BedFile(object):
                             int(row[1])
                             int(row[2])
                         except ValueError:
+                            self.has_header = True
                             i += 1
                             continue
+                        else:
+                            self.has_header = False
 
                 chromosome = row[0]
                 start, stop = int(row[1]), int(row[2])
@@ -565,7 +568,8 @@ class BedFile(object):
                             'call': call, 'tags': tags, 'notes': notes,
                             'data':data} )
 
-def main( args ):
+
+def main(*args):
     app = wx.App()
 
     rw = ReviewWidget(None)
@@ -575,5 +579,5 @@ def main( args ):
     app.MainLoop()
 
 
-if __name__=='__main__':
-    main( sys.argv )
+if __name__ == '__main__':
+    main(sys.argv)
