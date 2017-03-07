@@ -426,7 +426,7 @@ class ReviewWidget(wx.Frame):
 
 class BedFile(object):
 
-    def __init__(self, fpath, has_header=True):
+    def __init__(self, fpath, has_header=None):
         self.filepath = fpath
         self.filename = fpath.split(os.sep)[-1]
         self.has_header = has_header
@@ -448,16 +448,26 @@ class BedFile(object):
     def load(self):
         with open(self.filepath, 'rU') as bfile:
             cr = csv.reader(bfile, dialect='excel-tab', quotechar="\"")
-            i=0
+            i = 0
             for row in cr:
-                if i==0 and self.has_header:
-                    i+=1
-                    continue
+                if i == 0:
+                    if self.has_header:
+                        i += 1
+                        continue
+                    elif self.has_header is None:
+                        try:
+                            int(row[1])
+                            int(row[2])
+                        except ValueError:
+                            self.has_header = True
+                            i += 1
+                            continue
+                        else:
+                            self.has_header = False
 
                 chromosome = row[0]
                 start, stop = int(row[1]), int(row[2])
                 ref, var = row[3], row[4]
-
                 call, tags, notes = "", [], ""
                 if len(row) > 5:
                     call = row[5]
@@ -558,7 +568,8 @@ class BedFile(object):
                             'call': call, 'tags': tags, 'notes': notes,
                             'data':data} )
 
-def main( args ):
+
+def main(*args):
     app = wx.App()
 
     rw = ReviewWidget(None)
@@ -568,5 +579,5 @@ def main( args ):
     app.MainLoop()
 
 
-if __name__=='__main__':
-    main( sys.argv )
+if __name__ == '__main__':
+    main(sys.argv)

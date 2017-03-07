@@ -1,2 +1,4 @@
 .hg
 .hgignore
+
+build
