@@ -448,23 +448,23 @@ class BedFile(object):
     def load(self):
         with open(self.filepath, 'rU') as bfile:
             cr = csv.reader(bfile, dialect='excel-tab', quotechar="\"")
-            i=0
+            i = 0
             for row in cr:
-                if i==0 and self.has_header:
-                    i+=1
-                    continue
+                if i == 0:
+                    if self.has_header:
+                        i += 1
+                        continue
+                    elif self.has_header is None:
+                        try:
+                            int(row[1])
+                            int(row[2])
+                        except ValueError:
+                            i += 1
+                            continue
 
                 chromosome = row[0]
                 start, stop = int(row[1]), int(row[2])
                 ref, var = row[3], row[4]
-                if i == 0 and self.has_header is None:
-                    try:
-                        int(start)
-                        int(stop)
-                    except ValueError:
-                        i += 1
-                        continue
-
                 call, tags, notes = "", [], ""
                 if len(row) > 5:
                     call = row[5]
