@@ -1,6 +1,6 @@
 Using IGVNav for Mac:
 
-Just download IGVNav.zip, unzip and add to Applications/ folder.
+Just download [IGVNav.zip](dist/IGVNav.zip), unzip and add to Applications/ folder.
 
 Open IGV, open your session file, then open IGVNav app. 
 
