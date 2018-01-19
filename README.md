@@ -32,7 +32,7 @@ Steps to download IGVNav for Mac:
 5) Open a manual review file whereby the format of this file
 is a TSV file with columns:
    
-```Chromosome   Start   Stop   Reference   Variant   Call   Tags   Notes```
+*Chromosome   Start   Stop   Reference   Variant   Call   Tags   Notes*
 
 6) The first six columns (Chromosome, Start, Stop, Reference, and Variant)
 should be filled-out and the remaining columns will be blank.
