@@ -31,30 +31,30 @@ INSTRUCTIONS FOR USE:
 
 4) IGVNav app will prompt you to open a manual review file.
 
-3) Open a manual review file whereby the format of this file
+5) Open a manual review file whereby the format of this file
 is a TSV file with columns:
    
    Chromosome   Start   Stop   Reference   Variant   Call   Tags   Notes
 
-4) The first six columns (Chromosome, Start, Stop, Reference, and Variant)
+6) The first six columns (Chromosome, Start, Stop, Reference, and Variant)
 should be filled-out and the remaining columns will be blank.
 
 NOTE: The column names do not have to match exactly the above, but they do
 have to be the correct data in the same column order.
 
-5) Navigate through the manual review file using the arrows on the 
+7) Navigate through the manual review file using the arrows on the 
 IGVNav interface.
 
-6) Ensure that coordinates on IGVNav interface match the IGV interface.
+8) Ensure that coordinates on IGVNav interface match the IGV interface.
 
-7) Select a Call for each variant based on support for variant.
+9) Select a Call for each variant based on support for variant.
 
-8) Select various Tags for each variant if variant is labeled
+10) Select various Tags for each variant if variant is labeled
 as ambiguous or fail.
 
-9) Input any notes required in the free-text box.
+11) Input any notes required in the free-text box.
 
-10) Periodically save the manual review file to ensure that calls
+12) Periodically save the manual review file to ensure that calls
 are recorded. Be sure to save the manual review file prior to closing
 the IGVNav session.
 
