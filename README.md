@@ -1,4 +1,4 @@
-PURPOSE:
+## PURPOSE
 
 IGVNavigator (IGVNav) is a tool that was developed to assist in analyzing 
 variants during manual review. Its input is a text file with variant 
@@ -7,7 +7,7 @@ coordinates. This annotation includes the call (i.e. somatic, germline,
 ambiguous, or fail), tags to provide additional information if a variant 
 is called ambiguous or fail, and a notes section for free text
 
-DOWNLOAD:
+## DOWNLOAD:
 
 Steps to download IGVNav for Mac:
 
@@ -19,7 +19,7 @@ Steps to download IGVNav for Mac:
 
 
 
-INSTRUCTIONS FOR USE:
+## INSTRUCTIONS FOR USE
 
 1) Open IGV
 
@@ -32,13 +32,13 @@ INSTRUCTIONS FOR USE:
 5) Open a manual review file whereby the format of this file
 is a TSV file with columns:
    
-   Chromosome   Start   Stop   Reference   Variant   Call   Tags   Notes
+```Chromosome   Start   Stop   Reference   Variant   Call   Tags   Notes```
 
 6) The first six columns (Chromosome, Start, Stop, Reference, and Variant)
 should be filled-out and the remaining columns will be blank.
 
-NOTE: The column names do not have to match exactly the above, but they do
-have to be the correct data in the same column order.
+*NOTE: The column names do not have to match exactly the above, but they do
+have to be the correct data in the same column order.*
 
 7) Navigate through the manual review file using the arrows on the 
 IGVNav interface.
@@ -56,12 +56,12 @@ as ambiguous or fail.
 are recorded. Be sure to save the manual review file prior to closing
 the IGVNav session.
 
-EXAMPLE INTERFACE:
+## EXAMPLE INTERFACE
 
 ![alt text](https://github.com/griffithlab/igvnav/blob/master/IGVNav_interface.png)
 
 
-INSTRUCTIONS FOR DEVELOPING:
+## INSTRUCTIONS FOR DEVELOPING
 
 1) clone the repo/ sub-folder
 
