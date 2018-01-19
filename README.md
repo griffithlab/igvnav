@@ -1,11 +1,11 @@
 PURPOSE:
 
-IGVNavigator (IGVNav) is a tool that was developed in the Griffith Lab 
-to assist in analyzing variants during manual review. Its input is a 
-text file with variant coordinates and its output provides an annotation 
-of these variant coordinates. This annotation includes the call (i.e. 
-somatic, germline, ambiguous, or fail), tags to provide additional information 
-if a variant is called ambiguous or fail, and a notes section for free text
+IGVNavigator (IGVNav) is a tool that was developed to assist in analyzing 
+variants during manual review. Its input is a text file with variant 
+coordinates and its output provides an annotation of these variant 
+coordinates. This annotation includes the call (i.e. somatic, germline, 
+ambiguous, or fail), tags to provide additional information if a variant 
+is called ambiguous or fail, and a notes section for free text
 
 
 
