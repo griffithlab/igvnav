@@ -7,11 +7,6 @@ coordinates. This annotation includes the call (i.e. somatic, germline,
 ambiguous, or fail), tags to provide additional information if a variant 
 is called ambiguous or fail, and a notes section for free text
 
-EXAMPLE INTERFACE:
-
-![alt text](https://github.com/griffithlab/igvnav/blob/master/IGVNav_interface.png)
-
-
 DOWNLOAD:
 
 Steps to download IGVNav for Mac:
@@ -61,6 +56,9 @@ as ambiguous or fail.
 are recorded. Be sure to save the manual review file prior to closing
 the IGVNav session.
 
+EXAMPLE INTERFACE:
+
+![alt text](https://github.com/griffithlab/igvnav/blob/master/IGVNav_interface.png)
 
 
 INSTRUCTIONS FOR DEVELOPING:
